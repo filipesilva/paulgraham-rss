@@ -29,6 +29,7 @@
 
 (defn -main []
   (->> (essays)
+       reverse
        rss
        (spit "./_site/feed.rss")))
 
